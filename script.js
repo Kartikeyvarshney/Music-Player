@@ -148,10 +148,10 @@ function muteAndUnmuteTheSong()
         }
         else if(volume_bar.value>40 && volume_bar.value<=100)
         {
-        volume_icon.classList.add('fa-volume-high');
+        volume_icon.classList.add('fa-volume');
         volume_icon.classList.remove('fa-volume-low');
         volume_icon.classList.remove('fa-volume-xmark');
-        volume_icon.classList.remove('fa-volume');
+        volume_icon.classList.remove('fa-volume-high');
         }
     }
     
@@ -167,7 +167,7 @@ volume_bar.onchange =function setVolumIcon(){
         volume_icon.classList.remove('fa-volume-low');
         volume_icon.classList.remove('fa-volume');
     }
-    else if(volume_bar.value>=10 && volume_bar.value<=40)
+    else if(volume_bar.value>=10 && volume_bar.value<=30)
     {
         volume_icon.classList.add('fa-volume-low');
         volume_icon.classList.remove('fa-volume');
@@ -175,14 +175,14 @@ volume_bar.onchange =function setVolumIcon(){
         volume_icon.classList.remove('fa-volume-high');
     }
     // I can add this icon because it is not free for use 😭😭😭 if you have a pro account of fontawesome then you can use it just paste you kit link in header of html and uhcomment this section.
-    // else if(volume_bar.value>40 && volume_bar.value<=75)
-    // {
-    //     volume_icon.classList.add('fa-volume');
-    //     volume_icon.classList.remove('fa-volume-low');
-    //     volume_icon.classList.remove('fa-volume-xmark');
-    //     volume_icon.classList.remove('fa-volume-high');
-    // }
-    else if(volume_bar.value>40 && volume_bar.value<=100)
+    else if(volume_bar.value>30 && volume_bar.value<=60)
+    {
+        volume_icon.classList.add('fa-volume');
+        volume_icon.classList.remove('fa-volume-low');
+        volume_icon.classList.remove('fa-volume-xmark');
+        volume_icon.classList.remove('fa-volume-high');
+    }
+    else if(volume_bar.value>60 && volume_bar.value<=100)
     {
         volume_icon.classList.add('fa-volume-high');
         volume_icon.classList.remove('fa-volume-low');
