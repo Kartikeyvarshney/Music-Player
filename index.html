@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0db8727b74.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-div">
+        <div class="music-container">
+            <div>
+                <h2 id="tittle">Dekhte Dekhte</h2>
+                <h3 id="artist">Atif Aslam</h3>
+            </div>
+            
+            <div class="image-cantainer">
+                <img src="Posters/Dekhte Dekhte.jpg" alt="Poster">
+            </div>
+            <audio id="songAudio"src="Songs/Dekhte Dekhte.mp3 " ></audio>
+            <!-- Songs Duration -->
+            <div class="songDuration">
+                <div id="currentDuration">00:00</div>
+                <div id="maxDuration">00:00</div>
+            </div>
+            <!-- Progress Bar -->
+            <input type="range" value="0" id="progress">
+            <!-- Volume Bar -->
+            <div id="volume-bar">
+                <i class="fa-solid fa-volume-high" id="volume-icon" title="Mute"> 
+                </i>
+                <input type="range" value="0" id="volume">
+            </div>
+            
+            <!-- contorls -->
+            <div class="music-controls">
+                <i class="fa-solid fa-backward nav-btn" id="prev" title="Previous"></i>
+                <i class="fa-solid fa-play play-btn"id="play" title="Play"></i>
+                <i class="fa-solid fa-forward nav-btn" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
